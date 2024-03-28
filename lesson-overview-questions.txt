@@ -1,0 +1,54 @@
+1) How do you declare a variable?
+--> By using a variable keyword before your variable name, the assignent operator and the value.
+
+2) What are three different ways to declare a variable?
+--> By using the variable keywords var, let or const.
+
+3) Which one should you use when? 
+--> You should use var when you want a variable that ignores block scope (has global scope) or needs to be redefined multiple times. Let variables values can change but 
+the variable may not be reinitialized like var. Let will respect block level scope. Const respects block level scope cannot be reinitialized, nor can its value be changed.
+
+4) What are the rules for naming variables?
+--> 1] Variable name must only contain letters, digits, or the symbols $ and _ .
+--> 2] First character cannot be a digit.
+--> 3] No reserved names/keywords allowed (const, infinity, Number).
+--> 4] Case sensitive, camel casing suggested.
+--> 5] foreign characters allowed, not recommended.
+--> 6] "use strict" recommended at beginning of code (prevents undefined variables, like a global variable without var, let or const).
+
+5) What are operators, operands, and operations? 
+--> Operators are symbols that represent operations taking place. Operand(s) is/are the value(s) on which the operator is performing (ex. 2 operands, adding operator). 
+Operations are the actual mathmatical operations taking place (addition, subtraction, exponents).
+
+6) What is concatenation and what happens when you add numbers and strings together? 
+--> Concatenation refers to string concatenation, the joining of string variables. When you add numbers and strings, it will add both operands together as strings 
+(ex. 5 + 4 is 54, not 9). The Unary Plus operator can be used to extract inherent values from strings (ex. "12" has the inherent value of the integer 12).
+
+7) What are the different types of operators in JavaScript? 
+--> Basic math operators (addition, subtraction, multiplication, division, exponents). These are binary operators. Assignment operators designate a value to a variable name. 
+There are modify-and-assign operators which are essentially a shorthand operator for math and assignment (ex. let myNum = 5; let myNewNum += (myNum + 5)). There are also unary 
+operators, such as the increment/decrement operators (x++/++x, x--/--x) or the unary plus operator (extracts numeric value, if any from non-number valued variables). There are
+also bitwise operators and the comma operator, however these are rarely ever used.
+
+8) What is the difference between == and ===?
+--> The == operator compares values of both operands/variables after performing type conversion (if necessary). The === operator compares values of both operands/variables before
+type conversion to ensure variables are of the same data type.
+
+9) What are operator precedence values? 
+--> This states that if an expression has more than one operator, the order of operation adheres to standard mathematical P.E.M.D.A.S., with the unary plus and negation operators 
+at the top of the order, in that order.
+
+10) What are the increment/decrement operators?
+--> These are unary operators that either increase or decrease the value of a variable by 1. They can only be applied to variables as integers/doubles/floats will give an error.
+
+11) What is the difference between prefixing and postfixing them?
+--> Prefixing the increment/decrement operator will perform the operation and then return the value. Postfixing will return the value and then increment/decrement after.
+
+12) What are assignment operators?
+--> Operators that quite literally assign value to variable names. Most common example is =. Other examples are modify-and-assign operators 
+(let myNum = 5; let newNum = 2; newNum *= myNum; //returns 10).
+
+13) What is the Unary Plus Operator?
+--> The Unary Plus operator is the second form of the plus operator. It converts strings to numbers (the numeric value, if any), booleans to 0 or 1, ultimately determining
+if a variable is a number or not. A great use case scenario is extracting the numeric values of two variables with strings "12" and "38". If the strings were added, it would
+concatenate and the result would be "1238". With the unary plus operator, it would extract the values 12 and 38 from the strings and add them, returning the value of 50.
